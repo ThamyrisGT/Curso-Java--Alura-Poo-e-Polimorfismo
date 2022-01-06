@@ -1,17 +1,20 @@
 
-public abstract class FuncionarioAutenticado extends Funcionario{
-	private int senha;
-	
+public class Cliente implements Autenticado{
+
+	private int senha; 
+	@Override
 	public void setSenha(int senha) {
 		this.senha = senha;
+		
 	}
-	
+
+	@Override
 	public boolean autentica(int senha) {
 		if(this.senha == senha) {
 			return true;
 		} else {
 			return false;
 		}
-	}	
-	
+	}
+
 }
