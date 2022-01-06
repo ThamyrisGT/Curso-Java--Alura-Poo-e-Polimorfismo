@@ -7,4 +7,10 @@ public class ContaPoupanca extends Conta{
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public void deposita(double valor) {
+		super.saldo += valor + 0.1;
+		
+	}
+
 }

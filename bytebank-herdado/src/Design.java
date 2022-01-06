@@ -6,6 +6,8 @@ public class Design extends Funcionario{
 		System.out.println("entrei aqui no design");
 		return 200;
 	}
+
+	
 	
 
 	

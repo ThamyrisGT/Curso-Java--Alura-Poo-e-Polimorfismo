@@ -1,14 +1,14 @@
 
-public class Funcionario {
+public abstract class Funcionario {
 
 	private String nome;
 	private String cpf;
 	private double salario;
 	
 	
-	public double getBonificacao() {
-		return this.salario * 0.1;
-	}
+	// método sem corpo, você implementa a regra nos filhos que são obrigados a ter
+	// o filho somente não puxa esse método caso ela seja tbm abstrata, que ai ela nao pode ser instanciada
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;
