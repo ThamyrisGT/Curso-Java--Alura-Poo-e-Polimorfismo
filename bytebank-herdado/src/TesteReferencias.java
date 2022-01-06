@@ -12,11 +12,14 @@ public class TesteReferencias {
 		
 		EditorVideo ev = new EditorVideo();
 		ev.setSalario(1500);
+		Design d = new Design();
+		d.setSalario(1200);
 
 		ControleBonificacao cb = new ControleBonificacao();
 		cb.registra(g1);
 		cb.registra(f1);
 		cb.registra(ev);
+		cb.registra(d);
 
 	}
 
